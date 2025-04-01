@@ -10,4 +10,10 @@ Primer comentario multilinea
 Segundo comentario multilinea
 :D
 '''
-print(type('HI'))
+print(type('HI')) # Tipo de dato "str"
+print(type(2))
+print(type(1.2))
+print(type(1+2j))
+
+
+
