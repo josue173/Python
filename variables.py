@@ -5,4 +5,14 @@ print(variable)
 variable_boleana = True
 print(variable_boleana)
 
-#probando push
+first_name = input("¿Cuál es tu nombre? ")
+last_name = input("¿Cuál es tu apellido? ")
+
+print("Hola ", first_name, last_name)
+
+# Tipando variables
+
+direccion: str = "Mi direccion"
+direccion = 32
+
+print(direccion)
