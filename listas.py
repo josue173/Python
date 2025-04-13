@@ -45,3 +45,9 @@ print(mi_lista)
 nueva_lista = mi_lista.copy()
 print("Lista original: ", mi_lista)
 print("Nueva lista: ", nueva_lista)
+
+nueva_lista.reverse()
+print(nueva_lista)
+
+nueva_lista.sort()
+print(nueva_lista)
