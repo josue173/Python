@@ -1,43 +1,61 @@
-# print(5+5)
+# Clase en vídeo: https://youtu.be/Kp4Mvapo5kc?t=32030
 
-numeroUno = 1
-numeroDos = 31
+### Exception Handling ###
 
-numeroDos = "1"
+numberOne = 5
+numberTwo = 1
+numberTwo = "1"
 
-# print(numeroUno + numeroDos)
-
-# Solo try
-
-# try:
-#   print(numeroUno + numeroDos)
-#   print('Sin error')
-# except:
-#   print('Se ha producido un error')
-
-# try mamadisimo
+# Excepción base: try except
 
 # try:
-#   print(numeroUno + numeroDos)
-#   print('Sin error')
+#     print(numberOne + numberTwo)
+#     print("No se ha producido un error")
 # except:
-#   print('Se ha producido un error')
-# else:
-#   print('La ejecuciòn continúa correctamente')
+#     # Se ejecuta si se produce una excepción
+#     print("Se ha producido un error")
 
-# try super mamadísimo
+# Flujo completo de una excepción: try except else finally
+
+# try:
+#     print(numberOne + numberTwo)
+#     print("No se ha producido un error")
+# except:
+#     print("Se ha producido un error")
+# else:  # Opcional
+#     # Se ejecuta si no se produce una excepción
+#     print("La ejecución continúa correctamente")
+# finally:  # Opcional
+#     # Se ejecuta siempre
+#     print("La ejecución continúa")
+
+# Excepciones por tipo
+
+# try:
+#     print(numberOne + numberTwo)
+#     print("No se ha producido un error")
+# except ValueError:
+#     print("Se ha producido un ValueError")
+# except TypeError:
+#     print("Se ha producido un TypeError")
+
+# Captura de la información de la excepción
 
 try:
-  print(numeroUno + numeroDos)
-  print('Sin error')
-except:
-  print('Se ha producido un error')
-else:
-  print('La ejecuciòn continúa correctamente')
-finally:
-  print('Ejecutando finally')
-
-try:
-  print(numeroUno + numeroDos)
+    print(numberOne + numberTwo)
+    print("No se ha producido un error")
 except ValueError as error:
+    print('ValueError')
+    print(error)
+except Exception as my_random_error_name:
+    print('OTRO')
+    print(my_random_error_name)
+
+try:
+    number = int("hello")  # invalid conversion
+    print("No se ha producido un error")
+except ValueError as error:
+    print("Se ha producido un ValueError")
+    print(error)
+except TypeError as error:
   print(error)
